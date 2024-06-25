@@ -1,0 +1,30 @@
+* {
+  display: 'flex';
+  justify-content: 'center';
+  align-items: 'center';
+  height: '100vh';
+}
+
+.div1{
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+}
+@keyframes colorChange {
+  0% { background-color: green; }
+  50% { background-color: yellow; }
+  100% { background-color: red; }
+}
+
+/* Apply the animation to the button */
+.animated-button {
+  animation: colorChange 2s infinite; /* Run the animation for 2 seconds and repeat infinitely */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
